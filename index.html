@@ -16,7 +16,13 @@
       function vote() {
         let age = parseInt(prompt("Enter the value of age : "));
         if (age >= 18) {
-          alert("You are eligible for voting.");
+          // alert("You are eligible for voting.");
+          let c = confirm("Do you want to submit your details?");
+          if (c) {
+            alert("Your response is submitted successfully!");
+          } else {
+            alert("Thank you!");
+          }
         } else {
           alert("You are not eligible for voting.");
         }
