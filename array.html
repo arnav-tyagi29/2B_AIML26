@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playing with Arrays -_-</title>
+    <script>
+      let arr1 = new Array();
+      let arr2 = new Array([1, 2, 3, 4, 5]);
+      let arr = [1, 2, 3, 4, 5];
+      let data = arr.pop();
+      console.log(arr + " size : " + arr.length);
+      arr.push(5);
+      console.log(arr + " size : " + arr.length);
+      data = arr.unshift(0);
+      console.log(arr + " size : " + arr.length);
+      data = arr.shift();
+      console.log(arr + " size : " + arr.length);
+      arr.slice(1, 4);
+      console.log(arr + " size : " + arr.length);
+      arr.splice(2, 1);
+      console.log(arr + " size : " + arr.length);
+      arr.splice(2, 2);
+      console.log(arr + " size : " + arr.length);
+      arr.splice(2, 0, 3, 4);
+      console.log(arr + " size : " + arr.length);
+    </script>
+  </head>
+  <body></body>
+</html>
