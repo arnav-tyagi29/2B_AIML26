@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let product = {
+        productId: 123,
+        productName: "Airpods",
+        price: 4500,
+        qty: 2,
+        totPrice: function () {
+          console.log("Total price : " + this.price * this.qty);
+        },
+        updateProdQty: function (update) {
+          this.qty += update;
+          console.log("Updated Product Quantity : " + this.qty);
+        },
+        show: function () {
+          console.log(
+            "Product Id : " +
+              this.productId +
+              "\nProduct Name : " +
+              this.productName +
+              "\nPrice : " +
+              this.price +
+              "\nQuantity : " +
+              this.qty,
+          );
+        },
+      };
+      product.totPrice();
+      product.updateProdQty(2);
+      product.show();
+    </script>
+  </head>
+  <body></body>
+</html>

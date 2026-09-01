@@ -29,21 +29,51 @@
 // };
 // student.subject = ["web dev", "c++", "java"];
 
-class Student {
-  constructor(name, rollNumber, pincode, city) {
-    this.name = name;
-    this.rollNumber = rollNumber;
-    this.pincode = pincode;
-    this.city = city;
-  }
+// class Student {
+//   constructor(name, rollNumber, pincode, city) {
+//     this.name = name;
+//     this.rollNumber = rollNumber;
+//     this.pincode = pincode;
+//     this.city = city;
+//   }
 
-  display() {
-    console.log(this.name);
-  }
-}
+//   display() {
+//     console.log(this.name);
+//   }
+// }
 
-let s1 = new Student("vikas", 101, 201201, "modinagar");
-let s2 = new Student("vivek", 102, 201204, "modinagar");
+// let s1 = new Student("vikas", 101, 201201, "modinagar");
+// let s2 = new Student("vivek", 102, 201204, "modinagar");
 
-s1.display();
-s2.display();
+// s1.display();
+// s2.display();
+
+let product = {
+  productId: 101,
+  productName: "Laptop",
+  price: 50000,
+  quantity: 2,
+
+  calculateTotalPrice: function () {
+    return this.price * this.quantity;
+  },
+
+  updateQuantity: function (newQuantity) {
+    this.quantity = newQuantity;
+  },
+
+  displayInfo: function () {
+    console.log("Product ID:", this.productId);
+    console.log("Product Name:", this.productName);
+    console.log("Price:", this.price);
+    console.log("Quantity:", this.quantity);
+    console.log("Total Price:", this.calculateTotalPrice());
+  },
+};
+
+product.displayInfo();
+
+product.updateQuantity(5);
+
+console.log("\nAfter updating quantity:");
+product.displayInfo();
