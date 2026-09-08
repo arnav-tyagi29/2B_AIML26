@@ -78,108 +78,128 @@
 // console.log("\nAfter updating quantity:");
 // product.displayInfo();
 
-let firstName = "Vikas";
-let lastName = "Choudhary";
-console.log("My first name is " + firstName);
-console.log("My last name is " + lastName);
+// let firstName = "Vikas";
+// let lastName = "Choudhary";
+// console.log("My first name is " + firstName);
+// console.log("My last name is " + lastName);
 
-console.log(`My first name is ${firstName}. My last name is ${lastName}`);
-console.log(`My name is : ${firstName} ${lastName}`);
-console.log(`"My name is " ${firstName} ${lastName}`);
+// console.log(`My first name is ${firstName}. My last name is ${lastName}`);
+// console.log(`My name is : ${firstName} ${lastName}`);
+// console.log(`"My name is " ${firstName} ${lastName}`);
 // function fullName(first, last) {
 //   console.log(first);
 //   console.log(last);
 // }
-function fullName(first, last) {
-  return `${first} ${last}`;
-}
-// let name = new fullName(firstName, lastName);
-let name = `Hello ${fullName(firstName, lastName)}`;
-console.log(name);
+// function fullName(first, last) {
+//   return `${first} ${last}`;
+// }
+// // let name = new fullName(firstName, lastName);
+// let name = `Hello ${fullName(firstName, lastName)}`;
+// console.log(name);
 
 // function Hello() {
 //   console.log("Hello Vikas");
 // }
 
-let Hello = function () {
-  console.log("Hello Vikas");
-};
+// let Hello = function () {
+//   console.log("Hello Vikas");
+// };
 
-Hello();
+// Hello();
 
-let Hello2 = () => console.log("Hello Vikas");
+// let Hello2 = () => console.log("Hello Vikas");
 
-Hello2();
+// Hello2();
 
-function Physics(marks) {
-  return `${marks}`;
-}
+// function Physics(marks) {
+//   return `${marks}`;
+// }
 
-console.log(Physics(98));
+// console.log(Physics(98));
 
-let Physics2 = (marks) => {
-  return `${marks}`;
-};
+// let Physics2 = (marks) => {
+//   return `${marks}`;
+// };
 
-console.log(Physics2(98));
+// console.log(Physics2(98));
 
-let fullName2 = (first, last) => {
-  return `${first} ${last}`;
-};
+// let fullName2 = (first, last) => {
+//   return `${first} ${last}`;
+// };
 
-console.log(fullName2(firstName, lastName));
+// console.log(fullName2(firstName, lastName));
 
-Star = (n) => {
-  let star = "\n";
-  for (let i = 0; i < n; i++) {
-    for (let j = 0; j <= i; j++) {
-      star += "* ";
-    }
-    star += "\n";
-  }
-  console.log(star);
-};
+// Star = (n) => {
+//   let star = "\n";
+//   for (let i = 0; i < n; i++) {
+//     for (let j = 0; j <= i; j++) {
+//       star += "* ";
+//     }
+//     star += "\n";
+//   }
+//   console.log(star);
+// };
 
-Pattern = (n) => {
-  pattern = "\n";
-  for (let i = 1; i <= n; i++) {
-    for (let j = 1; j <= i; j++) {
-      pattern += j;
-    }
-    pattern += "\n";
-  }
-  console.log(pattern);
-};
+// Pattern = (n) => {
+//   pattern = "\n";
+//   for (let i = 1; i <= n; i++) {
+//     for (let j = 1; j <= i; j++) {
+//       pattern += j;
+//     }
+//     pattern += "\n";
+//   }
+//   console.log(pattern);
+// };
 
-Star(3);
-Pattern(3);
+// Star(3);
+// Pattern(3);
+
+// function sum(...values) {
+//   console.log(values);
+// }
+
+// sum(10, 20);
+// sum(10, 100, 1000);
+
+// function sum2(...values) {
+//   let total = 0;
+//   for (let n of values) {
+//     total += n;
+//   }
+//   return total;
+// }
+
+// console.log(sum2(10, 20, 30));
+// console.log(sum2(10, 20, 30, 40));
+
+// function sum3(first, last, ...values) {
+//   let total = 0;
+//   for (let n of values) {
+//     total += n;
+//   }
+//   let name = first + " " + last;
+//   console.log("name : ", name);
+//   console.log("total : ", total);
+// }
+
+// sum3("Arnav", "Tyagi", (10, 20, 30, 40));
 
 function sum(...values) {
-  console.log(values);
-}
-
-sum(10, 20);
-sum(10, 100, 1000);
-
-function sum2(...values) {
-  let total = 0;
-  for (let n of values) {
-    total += n;
+  let sum = 0;
+  for (let i in values) {
+    sum += values[i];
   }
-  return total;
+  console.log(sum);
 }
 
-console.log(sum2(10, 20, 30));
-console.log(sum2(10, 20, 30, 40));
+let arr = [10, 20, 30, 40];
+sum(...arr);
 
-function sum3(first, last, ...values) {
-  let total = 0;
-  for (let n of values) {
-    total += n;
-  }
-  let name = first + " " + last;
-  console.log("name : ", name);
-  console.log("total : ", total);
-}
-
-sum3("Arnav", "Tyagi", (10, 20, 30, 40));
+let name = "Vikas";
+let rollNumber = 101;
+let data = {
+  name,
+  rollNumber,
+};
+console.log(data.name);
+console.log(data.rollNumber);
