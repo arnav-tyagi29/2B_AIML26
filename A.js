@@ -184,22 +184,35 @@
 
 // sum3("Arnav", "Tyagi", (10, 20, 30, 40));
 
-function sum(...values) {
-  let sum = 0;
-  for (let i in values) {
-    sum += values[i];
+// function sum(...values) {
+//   let sum = 0;
+//   for (let i in values) {
+//     sum += values[i];
+//   }
+//   console.log(sum);
+// }
+
+// let arr = [10, 20, 30, 40];
+// sum(...arr);
+
+// let name = "Vikas";
+// let rollNumber = 101;
+// let data = {
+//   name,
+//   rollNumber,
+// };
+// console.log(data.name);
+// console.log(data.rollNumber);
+
+class Student {
+  constructor(name, rollNo) {
+    this.name = name;
+    this.rollNo = rollNo;
   }
-  console.log(sum);
 }
 
-let arr = [10, 20, 30, 40];
-sum(...arr);
+let s1 = new Student("Arnav", 19);
+let s2 = new Student("Rahul", 20);
 
-let name = "Vikas";
-let rollNumber = 101;
-let data = {
-  name,
-  rollNumber,
-};
-console.log(data.name);
-console.log(data.rollNumber);
+console.log(s1);
+console.log(s2);
