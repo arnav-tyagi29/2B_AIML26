@@ -204,15 +204,33 @@
 // console.log(data.name);
 // console.log(data.rollNumber);
 
+// class Student {
+//   constructor(name, rollNo) {
+//     this.name = name;
+//     this.rollNo = rollNo;
+//   }
+// }
+
+// let s1 = new Student("Arnav", 19);
+// let s2 = new Student("Rahul", 20);
+
+// console.log(s1);
+// console.log(s2);
+
 class Student {
-  constructor(name, rollNo) {
-    this.name = name;
-    this.rollNo = rollNo;
+  constructor(roll, name, year) {
+    this.rollNo = roll;
+    this.Name = name;
+    this.Year = year;
+    console.log(this.rollNo);
+    console.log(this.Name);
+    console.log(this.Year);
   }
 }
 
-let s1 = new Student("Arnav", 19);
-let s2 = new Student("Rahul", 20);
+// let h = new Hello();
+// let h1 = new Hello();
 
-console.log(s1);
-console.log(s2);
+let s1 = new Student();
+let s2 = new Student(101, "Vikas", "2ND");
+let s3 = new Student(102, "Vivek", "2ND");
